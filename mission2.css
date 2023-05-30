@@ -1,0 +1,365 @@
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+
+/* all */
+* {
+  box-sizing: border-box;
+  scroll-behavior:smooth;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* body */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: column;
+  color: rgb(7, 4, 0);
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* nav bar */
+#nav {
+    display:flex;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-link {
+    display:flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color:aliceblue;
+    align-self:center;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes glow {
+   0%  {color: rgb(251, 140, 5);} 
+  50% {color: rgba(53, 248, 18, 0.966);}
+  100%  {color: rgb(251, 140, 5);} 
+}
+
+
+/* Intro Section */
+
+.intro-img {
+  height:100vh;
+  background-size: cover;
+  object-fit: over;
+  background-image:linear-gradient(transparent, rgba(255, 0, 0, 0.325), rgb(232, 232, 244)), url(https://cdn.pixabay.com/photo/2018/08/01/11/09/plastic-waste-3576988_960_720.jpg);
+}
+
+#heading {
+    margin-top: 180px;
+}
+
+#heading h1 {
+  font-size: 120px;
+  margin-left: 60px;
+  font-family: 'Ubuntu', sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background: url(image/back.png);
+  -webkit-background-clip: text;
+  background-position: 0,0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+#heading h2 {
+    font-size: 30px;
+    line-height:60px;
+    margin-left: 60px;
+}
+
+#heading h3 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height:60px;
+    margin-left: 60px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#heading h4 {
+    font-size: 30px;
+    line-height:60px;
+    margin-left: 60px;
+}
+
+#heading p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+/* contents */
+
+#section1, #section2,#section3,#section4,#section5,#section6 {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+#section-text {
+    margin-top: 50px;
+}
+
+.sectionimg {
+  width:100%;
+  
+  background-size: cover;
+  object-fit: over;
+}
+
+#section1img {
+  background-image: linear-gradient(transparent, rgba(186, 58, 58, 0), rgb(244, 244, 247)), url(https://cdn.pixabay.com/photo/2023/02/14/04/39/volunteer-7788809_960_720.jpg);
+  height: 80vh;
+}
+
+#section2img {
+  background-image: linear-gradient(transparent, rgba(186, 58, 58, 0), rgb(244, 244, 247)), url(https://cdn.pixabay.com/photo/2016/11/23/15/49/bundle-1853667_960_720.jpg);
+  height: 95vh;
+}
+
+#section3img {
+  background-image: linear-gradient(transparent, rgba(186, 58, 58, 0), rgb(244, 244, 247)), url(https://cdn.pixabay.com/photo/2014/11/12/21/16/plastic-528789_960_720.jpg);
+  height: 90vh;
+}
+
+#section4img {
+  background-image: linear-gradient(transparent, rgba(186, 58, 58, 0), rgb(244, 244, 247)), url(https://cdn.pixabay.com/photo/2016/09/18/20/51/cans-1679022_960_720.jpg);
+  height: 80vh;
+}
+
+#section5img {
+  background-image: linear-gradient(transparent, rgba(186, 58, 58, 0), rgb(244, 244, 247)), url(https://cdn.pixabay.com/photo/2010/12/13/10/11/alcohol-2458_960_720.jpg);
+  height: 83vh;
+}
+
+#section6img {
+  background-image: linear-gradient(transparent, rgba(186, 58, 58, 0), rgb(244, 244, 247)), url(https://cdn.pixabay.com/photo/2015/12/09/17/11/vegetables-1085063_960_720.jpg);
+  height: 75vh;
+}
+
+i {
+  font-size: 30px;
+}
+
+.fa-circle-check {
+  color: green;
+}
+
+.fa-circle-xmark{
+  color: red;
+}
+
+#section-text h3{
+    font-size: 50px;
+    line-height: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#section-text p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+
+.sec-title {
+  font-size: 90px;
+  letter-spacing: 4px;
+  line-height: 130px;
+  margin-left: 60px;
+  margin-right: 60px;
+  animation-name: flashing;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes flashing {
+  0%   {color: rgb(246, 95, 95);}
+  25%  {color: rgb(226, 90, 244);}
+  50%  {color: rgb(6, 88, 6);}
+  75%  {color: rgb(70, 70, 242);} 
+  100% {color: rgb(36, 34, 10);}
+}
+
+.sub-heading {
+    font-size: 100px;
+    color:rgb(251, 99, 12);
+    letter-spacing: 18px;
+    line-height: 130px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 95px;
+}
+
+.do-and-dont{
+  display:flex;
+  align-items: stretch;
+}
+
+.do, .dont {
+  border-start-end-radius: 25px;
+  padding:20px;
+  margin-left: 50px;
+  margin-right:50px;
+  font-size: 20px;
+  background-color:rgba(240, 248, 255, 0.598);
+  font-family: 'Poppins', sans-serif;
+  transition: 1s;
+}
+
+.do:hover {
+  transform:scale(1.1);
+}
+
+.dont:hover {
+  transform:scale(1.1);
+}
+
+/* Quiz Section */
+#quiz {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 30px;
+  background-color: rgb(184, 227, 245);
+  text-align: center;
+  }
+
+#quiz h2 {
+  font-size: 30px;
+  line-height: 60px;
+}
+
+#question {
+    font-size: 35px;
+    line-height: 60px;
+  }
+
+#answerBox {
+  font-size: 25px;
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+
+#submitbtn {
+  border:none;
+  font-size: 30px;
+  margin: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(235, 211, 244);
+  padding: 10px;
+  border-radius: 10%;
+  transition: 0.7s ease;
+}
+
+#submitbtn:hover, #reloadbtn:hover {
+  cursor:pointer;
+  transform: scale(1.2);
+}
+
+#reloadbtn {
+  font-size:15px; 
+  cursor: pointer; 
+  margin-bottom: 20px;
+  transition: 0.7s ease;
+}
+
+#final {
+  text-align: center;
+  font-size: 20px;
+  font-weight:bold;
+  border: none;
+  padding-top: 15px;
+}
+
+
+/* footer section*/
+#footer {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+#p1{
+  border:none;
+  font-weight: bold; 
+  font-size: 20px;
+  font-style: italic;
+  letter-spacing: 2px;
+  padding:20px;
+}
+
+#p2, a {
+  border:none;
+  font-size: 15px;
+  color:rgb(7, 4, 0);
+  padding:10px;
+
+}
+
+#quiz hr {
+  color:grey;
+  height: 5px;
+  margin-left:80px;
+  margin-right:80px;
+}
+
+li {
+  padding:10px;
+}
+
+@media screen and (max-width:600px) {
+  body {
+  font-size: 12px;
+  }
+
+  #nav {
+    flex-direction: column;
+  }
+}
